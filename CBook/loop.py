@@ -8,3 +8,6 @@ while s:
 #nondestructive loop
 for item in s:
     print(item)
+
+for letter in 'ciao':
+    print(f'give me a {letter}...')
