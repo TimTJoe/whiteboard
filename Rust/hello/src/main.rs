@@ -8,7 +8,7 @@ fn main(){
         numbers.push(u64::from_str(&arg).expect("error parsing argument"));
     }
 
-    if numbers.len() = 0 {
+    if numbers.len() == 0 {
         eprintln!("USAGE: gcd NUMBER...");
         std::process::exit(1);
     }
