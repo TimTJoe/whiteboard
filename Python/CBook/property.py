@@ -29,3 +29,9 @@ class C(B):
 
 c = C()
 print(c.g)
+
+class listNoAppend(list):
+    def __getattribute__(self, name):
+        if name == 'append':
+            raise AttributeError(name)
+        return list.__getattribute__(self, name)
