@@ -1,7 +1,7 @@
 const callback = (entries) => {
   entries.forEach((entry) => {
     if(entry.isIntersecting) {
-      alert(`${entry.target.id} is visible`)
+      console.log(`${entry.target.id} is visible`)
     }
   });
 }
@@ -11,8 +11,8 @@ const options = {
 }
 
 const observer = new IntersectionObserver(callback, options);
-const one = document.getElementById("#one");
-const two = document.getElementById("#two");
+const one = document.getElementById("one");
+const two = document.getElementById("two");
 
 observer.observe(one);
 observer.observe(two);
