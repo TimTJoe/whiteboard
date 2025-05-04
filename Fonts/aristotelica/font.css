@@ -1,0 +1,45 @@
+/* import google font */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap'); */
+
+/* ICONS */
+@font-face {
+  font-family: 'Aristotelica Icons';
+  font-style: normal;
+  font-display: block;
+  src: url("./Aristotelica-Icons-Regular-trial.ttf") format('ttf');
+}
+
+@font-face {
+  font-family: 'Aristotelica Icons';
+  font-style: normal;
+  font-display: block;
+  src: url("./Aristotelica-Icons-Light-trial.ttf") format('ttf');
+}
+
+@font-face {
+  font-family: 'Aristotelica Icons';
+  font-style: normal;
+  font-display: block;
+  src: url("./Aristotelica-Icons-Bold-trial.ttf") format('ttf');
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: 'Aristotelica Text Trial';
+  font-style: normal;
+  font-display: block;
+  src: url("./Aristotelica-Text-Bold-trial.ttf") format('ttf');
+}
+@font-face {
+  font-family: 'Aristotelica Text Trial';
+  font-style: normal;
+  font-display: block;
+  src: url("./Aristotelica-Text-Light-trial.ttf") format('ttf');
+}
+@font-face {
+  font-family: 'Aristotelica Text Trial';
+  font-style: normal;
+  font-display: block;
+  src: url("./Aristotelica-Text-Regular-trial.ttf") format('ttf');
+}
