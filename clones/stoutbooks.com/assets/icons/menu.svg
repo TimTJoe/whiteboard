@@ -1,0 +1,5 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" class="menu__toggle--hamburger" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M0 7.5H36" stroke="#EE3124" stroke-width="2.5px" fill="none"></path>
+			<path d="M0 17.5H36" stroke="#EE3124" stroke-width="2.5px" fill="none"></path>
+			<path d="M0 27.5H36" stroke="#EE3124" stroke-width="2.5px" fill="none"></path>
+		</svg>
