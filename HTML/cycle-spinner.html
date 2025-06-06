@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Div Spinner</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .loader-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .spinner-main {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%; /* Makes it circular */
+            position: relative;
+            /* Using conic-gradient to create a visible arc */
+            background: conic-gradient(
+                #2196F3 0% 15%,         /* Visible blue arc (15% of the circle) */
+                transparent 15% 100%    /* Rest of the circle is transparent */
+            );
+            /* Add an inner border effect for depth if desired */
+            box-shadow: inset 0 0 0 6px rgba(100, 181, 246, 0.3);
+
+            /* Combined animation for rotation, skew, and translate */
+            animation:
+                spin-distort-and-translate 2.5s ease-in-out infinite;
+            transform-origin: center; /* Crucial for rotation */
+        }
+
+        @keyframes spin-distort-and-translate {
+            0% {
+                transform: rotate(0deg) skewX(0deg) skewY(0deg) translateY(0px);
+            }
+            25% {
+                transform: rotate(90deg) skewX(5deg) skewY(-3deg) translateY(-5px); /* Skew & slight lift */
+            }
+            50% {
+                transform: rotate(180deg) skewX(0deg) skewY(0deg) translateY(0px);
+            }
+            75% {
+                transform: rotate(270deg) skewX(-5deg) skewY(3deg) translateY(5px); /* Skew & slight drop */
+            }
+            100% {
+                transform: rotate(360deg) skewX(0deg) skewY(0deg) translateY(0px);
+            }
+        }
+
+        .loading-text {
+            margin-top: 20px;
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #333;
+            animation: pulse-opacity 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse-opacity {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader-container">
+        <div class="spinner-main"></div>
+        <p class="loading-text">Loading...</p>
+    </div>
+</body>
+</html>
